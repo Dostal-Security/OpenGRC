@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "organization.apps.OrganizationConfig",
     "home.apps.HomeConfig",
     "program.apps.ProgramConfig",
+    "framework.apps.FrameworkConfig",
 ]
 
 MIDDLEWARE = [
