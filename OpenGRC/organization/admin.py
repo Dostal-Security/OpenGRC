@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Organization
+from .models import BusinessUnit, Organization, ThirdParty
 
 # Register your models here.
 class OrganizationAdmin(admin.ModelAdmin):
@@ -7,3 +7,5 @@ class OrganizationAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Organization, OrganizationAdmin)
+admin.site.register(BusinessUnit)
+admin.site.register(ThirdParty)
