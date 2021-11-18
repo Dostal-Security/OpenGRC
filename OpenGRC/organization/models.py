@@ -47,6 +47,7 @@ class ThirdParty(models.Model):
     contact = models.ForeignKey(
         Contact, on_delete=models.CASCADE, blank=True, null=True
     )
+    organizations = models.ManyToManyField(Organization)
 
     def __str__(self):
         return self.name
